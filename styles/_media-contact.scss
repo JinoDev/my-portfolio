@@ -1,0 +1,29 @@
+@media (min-width: 1500px) {
+  form {
+    width: 60rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1499px) {
+  form {
+    width: 60rem;
+  }
+}
+
+@media (min-width: 790px) and (max-width: 999px) {
+  form {
+    width: 60rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 789px) {
+  form {
+    width: 50rem;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 499px) {
+  form {
+    width: 40rem;
+  }
+}

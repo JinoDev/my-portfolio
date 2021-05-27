@@ -1,0 +1,299 @@
+@media (min-width: 1500px) {
+  header {
+    .bg-grad {
+      position: relative;
+      height: 100vh;
+
+      .circle1 {
+        display: block;
+        background: #9b9b9b;
+        border-radius: 50%;
+        height: 70rem;
+        width: 70rem;
+        margin: 0;
+        position: absolute;
+
+        left: 10%;
+        top: 5%;
+        background: radial-gradient(
+          circle at 100px 100px,
+          rgba(150, 140, 131, 0.719),
+          rgb(189, 189, 189)
+        );
+
+        animation-name: moon-animation;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+      }
+
+      @keyframes moon-animation {
+        0% {
+          height: 70rem;
+          width: 70rem;
+        }
+        30% {
+          height: 20rem;
+          width: 20rem;
+          opacity: 1;
+        }
+        40% {
+          height: 20rem;
+          width: 20rem;
+          opacity: 0.3;
+        }
+        100% {
+          height: 70rem;
+          width: 70rem;
+          opacity: 0.7;
+        }
+      }
+
+      .card {
+        ul {
+          justify-content: flex-end;
+        }
+
+        a {
+          margin-right: 4rem;
+          font-size: 3rem;
+        }
+
+        .card-txt {
+          margin-left: 3rem;
+          width: 50%;
+
+          h1 {
+            margin-top: 15%;
+            line-height: 12rem;
+            width: 50%;
+            font-size: 5rem;
+          }
+
+          h2 {
+            text-indent: 2rem;
+            color: $p-c;
+            margin-bottom: 2rem;
+
+            span {
+              font-size: 3.3rem;
+              letter-spacing: 0.3rem;
+              color: #255c82;
+            }
+          }
+
+          h3 {
+            text-indent: 2rem;
+            color: $p-c;
+            font-size: 2.5rem;
+          }
+        }
+
+        .pic-svg img {
+          width: 40%;
+          position: absolute;
+          left: 50%;
+          bottom: 5%;
+        }
+      }
+    }
+  }
+}
+
+// normal desktop queries
+
+@media (min-width: 1000px) and (max-width: 1499px) {
+  header {
+    .bg-grad {
+      height: 100vh;
+      .card {
+        .card-txt {
+          margin-top: 15rem;
+
+          h1 {
+            font-size: 6rem;
+          }
+
+          h2 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+
+            span {
+              font-size: 3.3rem;
+            }
+          }
+
+          h3 {
+            font-size: 2.5rem;
+          }
+        }
+
+        a {
+          margin-right: 6rem;
+          font-size: 3rem;
+        }
+
+        .pic-svg img {
+          position: absolute;
+          width: 50%;
+          right: 10%;
+          bottom: 5%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 790px) and (max-width: 999px) {
+  header {
+    .bg-grad {
+      height: 100vh;
+
+      a {
+        margin-right: 6rem;
+        font-size: 3rem;
+      }
+      .card {
+        .card-txt {
+          margin-top: 15rem;
+          text-align: center;
+
+          h1 {
+            font-size: 6rem;
+            margin-bottom: 2rem;
+          }
+
+          h2 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+
+            span {
+              font-size: 3.3rem;
+            }
+          }
+
+          h3 {
+            font-size: 2.5rem;
+          }
+        }
+
+        .pic-svg img {
+          position: absolute;
+          left: 20%;
+          bottom: -1%;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 789px) {
+  header {
+    .bg-grad {
+      height: 100vh;
+      .card {
+        ul {
+          flex-direction: column;
+          align-items: center;
+          width: 50%;
+          margin: 0 auto;
+          margin-top: 3rem;
+
+          li {
+            margin-bottom: 3rem;
+
+            a {
+              font-size: 3rem;
+            }
+          }
+        }
+
+        .card-txt {
+          margin-top: 7rem;
+          text-align: center;
+
+          h1 {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+          }
+
+          h2 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+
+            span {
+              font-size: 3.3rem;
+            }
+          }
+
+          h3 {
+            font-size: 2.5rem;
+          }
+        }
+
+        .pic-svg img {
+          position: absolute;
+          width: 60%;
+          left: 20%;
+          bottom: 3%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 250px) and (max-width: 499px) {
+  header {
+    .bg-grad {
+      height: 60vh;
+      .card {
+        ul {
+          flex-direction: column;
+          align-items: center;
+          width: 50%;
+          margin: 0 auto;
+          margin-top: 1rem;
+
+          li {
+            margin-bottom: 2.5rem;
+
+            a {
+              font-size: 2rem;
+            }
+          }
+        }
+
+        .card-txt {
+          margin-top: 2rem;
+          text-align: center;
+
+          h1 {
+            font-size: 3rem;
+            margin-bottom: 0.3rem;
+            margin-top: 3rem;
+          }
+
+          h2 {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+
+            span {
+              font-size: 1.7rem;
+            }
+          }
+
+          h3 {
+            font-size: 1.5rem;
+          }
+        }
+
+        .pic-svg img {
+          width: 60%;
+          left: 40%;
+          bottom: 3%;
+        }
+      }
+    }
+  }
+}

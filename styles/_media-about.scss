@@ -1,0 +1,122 @@
+@media (min-width: 1500px) {
+  #about-me {
+    .about {
+      img {
+        width: 300px;
+        height: 300px;
+        margin-left: 40%;
+      }
+
+      p {
+        font-size: 2.3rem;
+        margin-left: 8%;
+      }
+    }
+
+    h3 {
+      font-size: 3.8rem;
+    }
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1499px) {
+  #about-me {
+    .about {
+      img {
+        width: 300px;
+        height: 300px;
+        margin-left: 40%;
+      }
+
+      p {
+        margin-left: 15%;
+      }
+    }
+
+    h3 {
+      font-size: 3.8rem;
+    }
+  }
+}
+
+@media (min-width: 790px) and (max-width: 999px) {
+  #about-me {
+    .about {
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
+
+      p {
+        margin: 0 auto;
+      }
+    }
+
+    h3 {
+      font-size: 3.8rem;
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 789px) {
+  #about-me {
+    .about {
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
+
+      p {
+        margin: 0 auto;
+      }
+    }
+
+    .books {
+      flex-direction: column;
+      .author {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 250px) and (max-width: 499px) {
+  #about-me {
+    .about {
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      p {
+        margin: 0 auto;
+      }
+    }
+
+    .books {
+      flex-direction: column;
+      .author {
+        margin-bottom: 4rem;
+      }
+    }
+
+    h3 {
+      font-size: 2.8rem;
+    }
+
+    .tools-container {
+      h3 {
+        margin: 2rem;
+      }
+    }
+  }
+}

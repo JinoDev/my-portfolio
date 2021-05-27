@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Rock+Salt&display=swap");
+@import "_variables";
+@import "_mixins";
+@import "_media-about";
+
+#about-me {
+  .line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      @include heading2();
+      padding-top: 4rem;
+    }
+
+    .line {
+      width: 10rem;
+      height: 0.5rem;
+      background-color: $secondary-c;
+      position: relative;
+      top: 9rem;
+      margin: 2rem;
+      border-radius: 10px;
+    }
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    div {
+      margin-top: 10rem;
+    }
+    img {
+      border: 1px solid $p-c;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    p {
+      font-size: 2.3rem;
+      line-height: 4.5rem;
+      color: $h-c;
+      width: 50%;
+    }
+  }
+
+  h3 {
+    margin: 15rem auto;
+    text-align: center;
+    color: $h-c;
+    font-family: "Kalam", cursive;
+  }
+
+  .books {
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+      width: 250px;
+    }
+
+    .book {
+      text-align: center;
+
+      p {
+        margin-top: 2rem;
+      }
+
+      .book-title {
+        font-size: 1.7rem;
+        font-weight: 900;
+      }
+    }
+  }
+  .tools-container {
+    background-color: $tertiary-c;
+    padding-bottom: 5rem;
+
+    h3 {
+      padding-top: 2rem;
+      margin-bottom: 10rem;
+      color: $p-c;
+    }
+
+    .tools-icons {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        cursor: pointer;
+
+        .fab {
+          margin: 0 5rem;
+          padding-bottom: 3rem;
+          border-radius: 50px;
+        }
+
+        .fa-html5 {
+          color: #eb7251;
+        }
+
+        .fa-css3-alt {
+          color: #167dbe;
+        }
+
+        .fa-bootstrap {
+          color: #6438b1;
+        }
+
+        .fa-sass {
+          color: #c66394;
+        }
+
+        .fa-git-square {
+          color: #000000;
+        }
+
+        p {
+          margin-bottom: 2rem;
+          margin-left: 5rem;
+          margin-right: 5rem;
+          font-size: 2.1rem;
+          color: $h-c;
+        }
+      }
+    }
+  }
+}

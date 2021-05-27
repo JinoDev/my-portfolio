@@ -1,0 +1,8 @@
+@import "_variables";
+@import "_mixins";
+
+main {
+  @import "_about-me";
+  @import "_work";
+  @import "_contact";
+}

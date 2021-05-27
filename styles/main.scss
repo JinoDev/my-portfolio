@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Rock+Salt&display=swap");
+@import "_reset";
+@import "_variables";
+@import "_header";
+@import "_mixins";
+@import "_mainii";
+@import "_footer";
+
+body {
+  font-size: 1.6rem;
+  font-family: "Mosk", sans-serif;
+  background-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
